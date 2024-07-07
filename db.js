@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 module.exports = () => {
-  const URL = "mongodb://localhost:27017";
+  const URL = "mongodb+srv://zebimalik4567:Miral1234@cluster0.3mdfkeu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
   mongoose.connect(URL);
   
   const db = mongoose.connection;
