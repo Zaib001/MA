@@ -27,7 +27,7 @@ app.use(express.json());
 app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(
   cors({
-    origin: ["https://ma-frontend-u95o.onrender.com/", "http://localhost:4242"],
+    origin: ["https://ma-frontend-u95o.onrender.com/", "https://ma-ney3.onrender.com"],
     credentials: true,
   })
 );
