@@ -25,7 +25,11 @@ require('events').EventEmitter.defaultMaxListeners = 15;
 app.use(express.json());
 
 app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
-app.use(cors());
+const corsOptions = {
+  origin: 'https://ma-frontend-u95o.onrender.com', // your frontend origin
+  credentials: true, // allow credentials
+};
+app.use(cors(corsOptions));
 
 app.use(cookieParser());
 app.use("/api", router);
