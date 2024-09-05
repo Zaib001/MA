@@ -20,7 +20,7 @@ app.use(
   cors({
     origin: [
       "https://barbarshop-dashboard.onrender.com",
-      "https://ma-1.onrender.com"
+      "https://barbar-frontend.onrender.com"
     ],
     credentials: true,
   })
