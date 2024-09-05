@@ -19,7 +19,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://barbarshop-dashboard.onrender.com"
+      "https://barbarshop-dashboard.onrender.com",
+      "https://ma-1.onrender.com"
     ],
     credentials: true,
   })
