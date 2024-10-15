@@ -21,7 +21,7 @@ app.use(
     origin: [
       "https://barbarshop-dashboard.onrender.com",
       "https://barbar-frontend.onrender.com",
-"http://localhost:5173/"
+"http://localhost:5173"
     ],
     credentials: true,
   })
