@@ -15,6 +15,7 @@ exports.createBarber = async (req, res) => {
 exports.getBarbers = async (req, res) => {
   try {
     const barbers = await Barber.find();
+    console.log(barbers)
     res.status(200).json(barbers);
   } catch (error) {
     res.status(400).json({ error: error.message });
