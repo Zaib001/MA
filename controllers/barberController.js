@@ -5,6 +5,7 @@ exports.createBarber = async (req, res) => {
 
   try {
     const barber = await Barber.create({ name, email, description, specialty, image, status });
+    console.log(barber)
     res.status(201).json(barber);
   } catch (error) {
     res.status(400).json({ error: error.message });
