@@ -6,6 +6,7 @@ const barberSchema = new mongoose.Schema({
   description: { type: String, required: true },
   image: { type: String },
   specialty: { type: String, required: true },
+  status: { type: String, enum: ["Available", "Unavailable"], default: "Available" },
 });
 
 module.exports = mongoose.model("Barber", barberSchema);
