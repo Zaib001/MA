@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-  "sk_test_51OKlibFTBEHW1myd4lyUjD2gNh9QwoPctXRSZVNWLnUphm0BOWAV6Hpz8hHiM2WkZ6tjpRQbT66EmwXfDmEhGSph00Crkio1RV"
+  "pk_live_51OwdyyF1GyAmh9XjXFM7JZ6g1EllJcc75xx0vcSUM5FslWxWeO9kxYpOfFELhw1usLytY6y02MU5SObFoFhay4dA00R5N6tRkS"
 );
 
 exports.paymentController = async (req, res) => {
