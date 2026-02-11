@@ -30,8 +30,8 @@ app.use(
 );
 
 
-app.use("/api/barbers", barberRoutes);
-app.use("/api/services", serviceRoutes);
+app.use("/barbers", barberRoutes);
+app.use("/services", serviceRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use("/", paymentRoute);
 app.use('/api', userRoutes);
